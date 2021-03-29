@@ -6,7 +6,7 @@ interface Transaction {
     id: number;
     title: string;
     amount: number;
-    type: string;
+    type: "deposit" | "withdraw";
     category: string;
     createdAt: Date;
 }
