@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+<h2 align="center">
+  DtMoney
+</h2>
+  
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/esterfania/dtmoney?color=%2304D361">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/esterfania/dtmoney">
 
-## Available Scripts
+  	
+  <a href="https://www.linkedin.com/in/esterfania-gama/">
+    <img alt="Made by esterfania" src="https://img.shields.io/badge/made%20by-esterfania-%2304D361">
+  </a>
+	
+  
+  <a href="https://github.com/esterfania/dtmoney/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/esterfania/countdown">
+  </a>
 
-In the project directory, you can run:
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/esterfania/countdown/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/esterfania/countdown?style=social">
+  </a>
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h2 align="center">
+    <img alt="DtMoney" title="#DtMoney" src="https://user-images.githubusercontent.com/35200622/113057909-00cbd100-9184-11eb-8a3b-4bb92d465ebe.png" width="500px" />
+</h2>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📝 Conteúdo
+<p align="center">
+<a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#getting_started">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#built_using">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧐 Sobre <a name = "about"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+DtMoney é uma aplicação feita durante o Ignite ReactJS da Rocketseat, é uma aplicação simples e eficaz para gerenciar suas finanças, permitindo o cadastro de entradas, saídas e a organização das mesmas em categorias.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## 🏁 Iniciando <a name = "getting_started"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Instruções de como acessar as rotas e instalação.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ⚒ Instalando <a name = "installing"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+# 💻 Iniciando
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+$ cd web
+$ yarn install
+$ yarn start
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⛏️ Tecnologias Utilizadas <a name = "built_using"></a>
+- 🔵 [TypeScript][typescript]
+- ⚛️ [React][reactjs]
+- 🔼 [NextJs][next]
+- 💅 [Styled-components][styled-components]
+- [MirageJS](https://miragejs.com/)
+- [Axios](https://github.com/axios/axios)
+- [Polished](https://polished.js.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 🤔 Como contribuir <a name = "contribute"></a>
+
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
+
+Feito com ❤️ por Esterfania Gama 👋🏽 [Entre em contato!](https://www.linkedin.com/in/esterfania-gama/)
+
+[next]: https://nextjs.org/
+[typescript]: https://www.typescriptlang.org/
+[reactjs]: https://reactjs.org
+[Rocketseat]:https://github.com/Rocketseat
+[styled-components]:https://styled-components.com/
