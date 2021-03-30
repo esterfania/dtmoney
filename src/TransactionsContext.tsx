@@ -3,6 +3,7 @@ import { api } from "./services/api";
 
 interface TransactionsContextData {
     transactions: Transaction[];
+    createTransaction: (transaction: TransactionInput) => Promise<void>;
 }
 
 interface TransactionsProviderProps {
@@ -10,7 +11,7 @@ interface TransactionsProviderProps {
 }
 
 interface Transaction {
-    id: number;
+    id?: number;
     title: string;
     amount: number;
     type: "deposit" | "withdraw";
@@ -18,10 +19,14 @@ interface Transaction {
     createdAt: Date;
 }
 
-export const TransactionsContext = createContext({} as TransactionsContextData);
+type TransactionInput = Omit<Transaction, "id" | "createdAt">;
+
+export const TransactionsContext = createContext<TransactionsContextData>(
+    {} as TransactionsContextData
+);
 
 export function TransactionsProvider({ children }: TransactionsProviderProps) {
-    const [transactions, setTransactions] = useState([]);
+    const [transactions, setTransactions] = useState<Transaction[]>([]);
 
     useEffect(() => {
         api.get("transactions").then((res) => {
@@ -29,8 +34,20 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
         });
     }, []);
 
+    async function createTransaction(transactionInput: TransactionInput) {
+        const response = await api.post("/transactions", {
+            ...transactionInput,
+            createdAt: new Date(),
+        });
+        const { transaction } = response.data;
+
+        setTransactions([...transactions, transaction]);
+    }
+
     return (
-        <TransactionsContext.Provider value={{ transactions }}>
+        <TransactionsContext.Provider
+            value={{ transactions, createTransaction }}
+        >
             {children}
         </TransactionsContext.Provider>
     );
